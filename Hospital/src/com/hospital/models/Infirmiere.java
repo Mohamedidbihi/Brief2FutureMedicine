@@ -1,28 +1,17 @@
 package com.hospital.models;
 
-public class Doctor extends Person{
-
+public class Infirmiere extends Person {
 	private String professionNumber;
 	private TimeSlot shiftSlot;
 	private double salary;
-	private String specialite;
-
 	
-	
-	public Doctor(String firstname,String lastname,String phone,String address, String professionNumber,TimeSlot shiftSlot,double salary,String specialite) {
+	public Infirmiere() {}
+	public Infirmiere(String firstname,String lastname,String phone,String address,String professionNumber,TimeSlot shiftSlot,double salary) {
 		super(firstname, lastname, phone, address);
 		this.professionNumber = professionNumber;
 		this.shiftSlot = shiftSlot;
 		this.salary = salary;
-		this.specialite = specialite;
-	}
-
-	public String getSpecialite() {
-		return specialite;
-	}
-
-	public void setSpecialite(String specialite) {
-		this.specialite = specialite;
+	
 	}
 
 	public String getProfessionNumber() {
@@ -47,12 +36,6 @@ public class Doctor extends Person{
 
 	public void setSalary(double salary) {
 		this.salary = salary;
-	}
-
-	@Override
-	public String toString() {
-		return "Doctor [professionNumber=" + professionNumber + ", shiftSlot=" + shiftSlot + ", salary=" + salary
-				+ ", specialite=" + specialite + "]";
 	}
 	
 	

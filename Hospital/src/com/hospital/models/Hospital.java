@@ -8,6 +8,7 @@ public class Hospital {
 	private String name;
 	private String city;
 	private List<Doctor> doctors;
+	private List<Infirmiere> Infirmieres;
 	private List<Room> rooms;
 	
 	public Hospital() {
@@ -60,6 +61,14 @@ public class Hospital {
 
 	public void setRooms(List<Room> rooms) {
 		this.rooms = rooms;
+	}
+	
+	public List<Infirmiere> getInfirmieres() {
+		return Infirmieres;
+	}
+
+	public void setInfirmieres(List<Infirmiere> Infirmieres) {
+		this.Infirmieres = Infirmieres;
 	}
 
 	@Override

@@ -1,6 +1,71 @@
 package com.hospital.models;
 
+import com.hospital.enumerations.Resultatoperation;
+
 public class Operation {
+
+	private String op;
+	private Doctor doctor ;
+	private Patient patient;
+	private Infirmiere infirmiere ;
+	private Room room;
+	private double prix;
+	private Resultatoperation status;
+
+	
+	
+	public Doctor getDoctor() {
+		return doctor;
+	}
+	public void setDoctor(Doctor doctor) {
+		this.doctor = doctor;
+	}
+	public Patient getPatient() {
+		return patient;
+	}
+	public void setPatient(Patient patient) {
+		this.patient = patient;
+	}
+	public Room getRoom() {
+		return room;
+	}
+
+	public void setRoom(Room room) {
+		this.room = room;
+	}
+	public double getPrix() {
+		return prix;
+	}
+	public void setPrix(double prix) {
+		this.prix = prix;
+	}
+
+	public String getOp() {
+		return op;
+	}
+	public void setOp(String op) {
+		this.op = op;
+	}
+	public Resultatoperation getStatus() {
+		return status;
+	}
+	public void setStatus(Resultatoperation status) {
+		this.status = status;
+	}
+	public Infirmiere getInfirmiere() {
+		return infirmiere;
+	}
+	public void setInfirmiere(Infirmiere infirmiere) {
+		this.infirmiere = infirmiere;
+	}
+	@Override
+	public String toString() {
+		return "Operation [ op=" + op + ", doctor=" + doctor + ", patient=" + patient + ", infirmiere="
+				+ infirmiere + ", room=" + room + ", prix=" + prix + ", status=" + status + "]";
+	}
+	
+
+	
 
 	// Une opération sera dans un hopital, dans une salle spécifique, et géré par un médecin X qui fait partie de l'hopital :)
 	

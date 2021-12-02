@@ -1,13 +1,32 @@
 package com.hospital.interfaces;
 
+import com.hospital.enumerations.InsuranceType;
+import com.hospital.enumerations.Resultatoperation;
+import com.hospital.models.Doctor;
+import com.hospital.models.Infirmiere;
 import com.hospital.models.Operation;
+import com.hospital.models.Room;
+
 import java.util.Optional;
-import java.util.List;
+
 
 
 public interface OperationInterface {
 
-	public Optional<Operation> getOperationByRef(int ref);
+
 	
-	public void addOperation(List<Operation> operations);
+	
+	public Operation addOperation();
+	
+	public void resteInsurrance(double prix, InsuranceType i);
+	
+	public void genererRapport(Operation op);
+	
+	public Doctor getDoc();
+	
+	public Infirmiere getInf();
+	
+	public Room getRoom();
+    
+	public void changeStatut(Operation op , Resultatoperation r);
 }
