@@ -54,6 +54,7 @@ public class Patientlmpl implements PatientInterface {
 	      Patient p =  new Patient(nom, prenom, tele, adresse, date, num, type,pf);
 	      return p;
 	}
+	
 
 	
 }

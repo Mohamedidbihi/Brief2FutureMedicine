@@ -14,6 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
 		OperationInterface p = new OperationImpl();
+	
 		Data d = new Data();
 	 System.out.println("-------------------Bienvenue a l'hopital MED5------------------------");
 	 System.out.println(">>>>>>>>>>>>>>>>>>>>> Choisir une option :");
